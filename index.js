@@ -2,7 +2,7 @@ import React from 'react';
 import {
     Text,
     View,
-    TouchableHighlight,
+    TouchableOpacity,
     StyleSheet,
 } from 'react-native';
 
@@ -62,11 +62,11 @@ export default class RNChipPicker extends React.Component {
                 chipStyle.push(style.lastItem);
             };
             chips.push(
-                <TouchableHighlight key={i} style={chipStyle} onPress={() => this.props.onValueSelect(item)}>
+                <TouchableOpacity key={i} style={chipStyle} onPress={() => this.props.onValueSelect(item)}>
                     <View>
                         <Text>{item}</Text>
                     </View>
-                </TouchableHighlight>
+                </TouchableOpacity>
             );
         };
 
