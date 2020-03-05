@@ -37,6 +37,7 @@ export default class RNChipPicker extends React.Component {
                 borderRadius: 10,
                 alignSelf: 'stretch',
                 flexDirection: 'row',
+                backgroundColor: this.props.backgroundColor,
             }
         });
 
