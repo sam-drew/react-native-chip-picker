@@ -34,12 +34,6 @@ export default class RNChipPicker extends React.Component {
                 borderTopRightRadius: 10,
             },
             container: {
-                shadowColor: 'rgba(0,0,0, .2)', // IOS
-                shadowOffset: { height: 2, width: 1 }, // IOS
-                shadowOpacity: 1, // IOS
-                shadowRadius: 5, //IOS
-                backgroundColor: '#fff',
-                elevation: 5, // Android,
                 borderRadius: 10,
                 alignSelf: 'stretch',
                 flexDirection: 'row',
