@@ -6,6 +6,8 @@ import {
     StyleSheet,
 } from 'react-native';
 
+import invert from 'invert-color';
+
 export default class RNChipPicker extends React.Component {
     render() {
         // Check & set the colour for selected chips.
@@ -38,6 +40,9 @@ export default class RNChipPicker extends React.Component {
                 alignSelf: 'stretch',
                 flexDirection: 'row',
                 backgroundColor: this.props.backgroundColor,
+            },
+            innerText: {
+                color: invert(this.props.backgroundColor, true)
             }
         });
 
@@ -59,7 +64,7 @@ export default class RNChipPicker extends React.Component {
             chips.push(
                 <TouchableOpacity key={i} style={chipStyle} onPress={() => this.props.onValueSelect(item)}>
                     <View>
-                        <Text>{item}</Text>
+                        <Text style={style.innerText}>{item}</Text>
                     </View>
                 </TouchableOpacity>
             );

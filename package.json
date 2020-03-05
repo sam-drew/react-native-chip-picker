@@ -9,5 +9,8 @@
   "devDependencies": {
     "react": "16.9.0",
     "react-native": "^0.61.4"
+  },
+  "dependencies": {
+    "invert-color": "^2.0.0"
   }
 }
